@@ -1,0 +1,155 @@
+[
+  {
+    "Command": "build",
+    "ChildCommands": [
+      "install",
+      "uninstall",
+      "run",
+      "test",
+      "-p",
+      "--prefix",
+      "--prefix-lib-dir",
+      "--prefix-exe-dir",
+      "--prefix-include-dir",
+      "--release=fast",
+      "--release=safe",
+      "--release=small",
+      "-fdarling",
+      "-fno-darling",
+      "-fqemu",
+      "-fno-qemu",
+      "--glibc-runtimes",
+      "-frosetta",
+      "-fno-rosetta",
+      "-fwasmtime",
+      "-fno-wasmtime",
+      "-fwine",
+      "-fno-wine",
+      "-h",
+      "--help",
+      "-l",
+      "--list-steps",
+      "--verbose",
+      "--color on",
+      "--color off",
+      "--color auto",
+      "--prominent-compile-errors",
+      "--summary all",
+      "--summary new",
+      "--summary failures",
+      "--summary none",
+      "--skip-oom-steps",
+      "--fetch"
+    ]
+  },
+  {
+    "Command": "fetch",
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "--save",
+      "--save=",
+      "--save-exact",
+      "--save-exact="
+    ]
+  },
+  {
+    "Command": "init",
+    "ChildCommands": [
+      "-h",
+      "--help"
+    ]
+  },
+  {
+    "Command": "build-exe",
+    "ChildCommands": []
+  },
+  {
+    "Command": "build-lib",
+    "ChildCommands": []
+  },
+  {
+    "Command": "build-obj",
+    "ChildCommands": []
+  },
+  {
+    "Command": "test",
+    "ChildCommands": []
+  },
+  {
+    "Command": "run",
+    "ChildCommands": []
+  },
+  {
+    "Command": "ast-check",
+    "ChildCommands": []
+  },
+  {
+    "Command": "fmt",
+    "ChildCommands": []
+  },
+  {
+    "Command": "reduce",
+    "ChildCommands": []
+  },
+  {
+    "Command": "translate-c",
+    "ChildCommands": []
+  },
+  {
+    "Command": "ar",
+    "ChildCommands": []
+  },
+  {
+    "Command": "cc",
+    "ChildCommands": []
+  },
+  {
+    "Command": "dlltool",
+    "ChildCommands": []
+  },
+  {
+    "Command": "lib",
+    "ChildCommands": []
+  },
+  {
+    "Command": "ranlib",
+    "ChildCommands": []
+  },
+  {
+    "Command": "objcopy",
+    "ChildCommands": []
+  },
+  {
+    "Command": "rc",
+    "ChildCommands": []
+  },
+  {
+    "Command": "env",
+    "ChildCommands": []
+  },
+  {
+    "Command": "help",
+    "ChildCommands": []
+  },
+  {
+    "Command": "std",
+    "ChildCommands": []
+  },
+  {
+    "Command": "libc",
+    "ChildCommands": []
+  },
+  {
+    "Command": "targets",
+    "ChildCommands": []
+  },
+  {
+    "Command": "version",
+    "ChildCommands": []
+  },
+  {
+    "Command": "zen",
+    "ChildCommands": []
+  }
+]
