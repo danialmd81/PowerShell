@@ -62,51 +62,326 @@
   },
   {
     "Command": "build-exe",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "--color on",
+      "--color off",
+      "--color auto",
+      "-O Debug",
+      "-O ReleaseFast",
+      "-O ReleaseSafe",
+      "-O ReleaseSmall",
+      "-ofmt=elf",
+      "-ofmt=c",
+      "-ofmt=wasm",
+      "-ofmt=coff",
+      "-ofmt=macho",
+      "-ofmt=plan9",
+      "-ofmt=hex",
+      "-ofmt=raw",
+      "-femit-bin",
+      "-fno-emit-bin",
+      "-femit-asm",
+      "-fno-emit-asm",
+      "-femit-llvm-ir",
+      "-fno-emit-llvm-ir",
+      "-femit-llvm-bc",
+      "-fno-emit-llvm-bc",
+      "-femit-h",
+      "-fno-emit-h",
+      "-femit-docs",
+      "-fno-emit-docs",
+      "-femit-implib",
+      "-fno-emit-implib",
+      "--show-builtin",
+      "--cache-dir",
+      "--global-cache-dir",
+      " --zig-lib-dir",
+      "--name",
+      "--libc"
+    ]
   },
   {
     "Command": "build-lib",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "--color on",
+      "--color off",
+      "--color auto",
+      "-O Debug",
+      "-O ReleaseFast",
+      "-O ReleaseSafe",
+      "-O ReleaseSmall",
+      "-ofmt=elf",
+      "-ofmt=c",
+      "-ofmt=wasm",
+      "-ofmt=coff",
+      "-ofmt=macho",
+      "-ofmt=plan9",
+      "-ofmt=hex",
+      "-ofmt=raw",
+      "-femit-bin",
+      "-fno-emit-bin",
+      "-femit-asm",
+      "-fno-emit-asm",
+      "-femit-llvm-ir",
+      "-fno-emit-llvm-ir",
+      "-femit-llvm-bc",
+      "-fno-emit-llvm-bc",
+      "-femit-h",
+      "-fno-emit-h",
+      "-femit-docs",
+      "-fno-emit-docs",
+      "-femit-implib",
+      "-fno-emit-implib",
+      "--show-builtin",
+      "--cache-dir",
+      "--global-cache-dir",
+      " --zig-lib-dir",
+      "--name",
+      "--libc"
+    ]
   },
   {
     "Command": "build-obj",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "--color on",
+      "--color off",
+      "--color auto",
+      "-O Debug",
+      "-O ReleaseFast",
+      "-O ReleaseSafe",
+      "-O ReleaseSmall",
+      "-ofmt=elf",
+      "-ofmt=c",
+      "-ofmt=wasm",
+      "-ofmt=coff",
+      "-ofmt=macho",
+      "-ofmt=plan9",
+      "-ofmt=hex",
+      "-ofmt=raw",
+      "-femit-bin",
+      "-fno-emit-bin",
+      "-femit-asm",
+      "-fno-emit-asm",
+      "-femit-llvm-ir",
+      "-fno-emit-llvm-ir",
+      "-femit-llvm-bc",
+      "-fno-emit-llvm-bc",
+      "-femit-h",
+      "-fno-emit-h",
+      "-femit-docs",
+      "-fno-emit-docs",
+      "-femit-implib",
+      "-fno-emit-implib",
+      "--show-builtin",
+      "--cache-dir",
+      "--global-cache-dir",
+      " --zig-lib-dir",
+      "--name",
+      "--libc"
+    ]
   },
   {
     "Command": "test",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "--color on",
+      "--color off",
+      "--color auto",
+      "-O Debug",
+      "-O ReleaseFast",
+      "-O ReleaseSafe",
+      "-O ReleaseSmall",
+      "-ofmt=elf",
+      "-ofmt=c",
+      "-ofmt=wasm",
+      "-ofmt=coff",
+      "-ofmt=macho",
+      "-ofmt=plan9",
+      "-ofmt=hex",
+      "-ofmt=raw",
+      "-femit-bin",
+      "-fno-emit-bin",
+      "-femit-asm",
+      "-fno-emit-asm",
+      "-femit-llvm-ir",
+      "-fno-emit-llvm-ir",
+      "-femit-llvm-bc",
+      "-fno-emit-llvm-bc",
+      "-femit-h",
+      "-fno-emit-h",
+      "-femit-docs",
+      "-fno-emit-docs",
+      "-femit-implib",
+      "-fno-emit-implib",
+      "--show-builtin",
+      "--cache-dir",
+      "--global-cache-dir",
+      " --zig-lib-dir",
+      "--name",
+      "--libc"
+    ]
   },
   {
     "Command": "run",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "--color on",
+      "--color off",
+      "--color auto",
+      "-O Debug",
+      "-O ReleaseFast",
+      "-O ReleaseSafe",
+      "-O ReleaseSmall",
+      "-ofmt=elf",
+      "-ofmt=c",
+      "-ofmt=wasm",
+      "-ofmt=coff",
+      "-ofmt=macho",
+      "-ofmt=plan9",
+      "-ofmt=hex",
+      "-ofmt=raw",
+      "-femit-bin",
+      "-fno-emit-bin",
+      "-femit-asm",
+      "-fno-emit-asm",
+      "-femit-llvm-ir",
+      "-fno-emit-llvm-ir",
+      "-femit-llvm-bc",
+      "-fno-emit-llvm-bc",
+      "-femit-h",
+      "-fno-emit-h",
+      "-femit-docs",
+      "-fno-emit-docs",
+      "-femit-implib",
+      "-fno-emit-implib",
+      "--show-builtin",
+      "--cache-dir",
+      "--global-cache-dir",
+      " --zig-lib-dir",
+      "--name",
+      "--libc"
+    ]
   },
   {
     "Command": "ast-check",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "--color on",
+      "--color off",
+      "--color auto",
+      "-t"
+    ]
   },
   {
     "Command": "fmt",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "--color on",
+      "--color off",
+      "--color auto",
+      "--stdin",
+      "--check",
+      "--ast-check",
+      " --exclude"
+    ]
   },
   {
     "Command": "reduce",
-    "ChildCommands": []
+    "ChildCommands": [
+      "--seed",
+      "--skip-smoke-test",
+      "--mod",
+      "--deps",
+      "--main-mod-path"
+    ]
   },
   {
     "Command": "translate-c",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "--color on",
+      "--color off",
+      "--color auto",
+      "-O Debug",
+      "-O ReleaseFast",
+      "-O ReleaseSafe",
+      "-O ReleaseSmall",
+      "-ofmt=elf",
+      "-ofmt=c",
+      "-ofmt=wasm",
+      "-ofmt=coff",
+      "-ofmt=macho",
+      "-ofmt=plan9",
+      "-ofmt=hex",
+      "-ofmt=raw",
+      "-femit-bin",
+      "-fno-emit-bin",
+      "-femit-asm",
+      "-fno-emit-asm",
+      "-femit-llvm-ir",
+      "-fno-emit-llvm-ir",
+      "-femit-llvm-bc",
+      "-fno-emit-llvm-bc",
+      "-femit-h",
+      "-fno-emit-h",
+      "-femit-docs",
+      "-fno-emit-docs",
+      "-femit-implib",
+      "-fno-emit-implib",
+      "--show-builtin",
+      "--cache-dir",
+      "--global-cache-dir",
+      " --zig-lib-dir",
+      "--name",
+      "--libc"
+    ]
   },
   {
     "Command": "ar",
-    "ChildCommands": []
+    "ChildCommands": [
+      "--format=default",
+      "--format=gnu",
+      "--format=darwin",
+      "--format=bsd",
+      "--format=bigarchive",
+      "-h",
+      "--help",
+      "--output",
+      "--thin",
+      "--version"
+    ]
   },
   {
     "Command": "cc",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help"
+    ]
+  },
+  {
+    "Command": "c++",
+    "ChildCommands": [
+      "-h",
+      "--help"
+    ]
   },
   {
     "Command": "dlltool",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help"
+    ]
   },
   {
     "Command": "lib",
@@ -114,11 +389,19 @@
   },
   {
     "Command": "ranlib",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "-v",
+      "--version"
+    ]
   },
   {
     "Command": "objcopy",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help"
+    ]
   },
   {
     "Command": "rc",
@@ -126,7 +409,10 @@
   },
   {
     "Command": "env",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help"
+    ]
   },
   {
     "Command": "help",
@@ -134,11 +420,23 @@
   },
   {
     "Command": "std",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "-p",
+      "--port",
+      "--open-browser",
+      "--no-open-browser"
+    ]
   },
   {
     "Command": "libc",
-    "ChildCommands": []
+    "ChildCommands": [
+      "-h",
+      "--help",
+      "-target",
+      "-includes"
+    ]
   },
   {
     "Command": "targets",
@@ -150,6 +448,14 @@
   },
   {
     "Command": "zen",
+    "ChildCommands": []
+  },
+  {
+    "Command": "-h",
+    "ChildCommands": []
+  },
+  {
+    "Command": "--help",
     "ChildCommands": []
   }
 ]
