@@ -1,4 +1,5 @@
-oh-my-posh init pwsh --config ".\.posh_themes\iterm2.omp.json" | Invoke-Expression
+$themePath = Join-Path -Path $HOME -ChildPath "Documents\PowerShell\.posh_themes\iterm2.omp.json"
+oh-my-posh init pwsh --config $themePath | Invoke-Expression
 
 Import-Module -Name Microsoft.WinGet.CommandNotFound
 
