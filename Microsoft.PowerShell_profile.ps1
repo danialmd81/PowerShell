@@ -1,4 +1,4 @@
-oh-my-posh init pwsh --config "C:\Users\Danial Mobini\Documents\PowerShell\.posh_themes\iterm2.omp.json" | Invoke-Expression
+oh-my-posh init pwsh --config ".\.posh_themes\iterm2.omp.json" | Invoke-Expression
 
 Import-Module -Name Microsoft.WinGet.CommandNotFound
 
