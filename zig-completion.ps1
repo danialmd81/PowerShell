@@ -8,42 +8,77 @@ $scriptblock = {
     
     $filePath = Join-Path -Path $HOME -ChildPath "Documents\PowerShell\commands-list.json"
     $commandsJson = Get-Content -Path $filePath | ConvertFrom-Json
-
-    $wordNumber = 0
-    if (($commandAst.CommandElements[0].Value.Length + $commandAst.CommandElements[1].Value.Length) -lt $cursorPosition)
+    $wordCount = $commandAst.CommandElements.Count
+    $lineSum = $commandAst.extent.EndOffset
+    $sum = 0
+    foreach ($element in $commandAst.CommandElements)
     {
-        $wordNumber += 1
+        $sum += $element.Value.Length
     }
-    $context = if ($wordNumber -eq 1) { 'MainCommand' } elseif ($wordNumber -gt 1) { 'ChildCommand' }
-    
-    $partialCommand = $wordToComplete.Trim()
-    
-    switch ($context)
+
+    if ($lineSum -eq $sum)
     {
-        'MainCommand'
+        $context = 'MainCommand'
+    }
+    else
+    {
+        if ($lineSum -eq $cursorPosition -and $wordCount -eq 2)
+        {
+            $context = 'MainCommand'
+        }
+        else
+        {
+            $context = 'ChildCommand'
+        }
+    }
+        
+    if ($context -eq 'MainCommand')
+    {
+        if ($wordToComplete -eq '')
         {
             # Suggest main commands
-            $commandsJson | Where-Object { $_.Command -like "$partialCommand*" } | ForEach-Object {
+            $commandsJson | ForEach-Object {
                 [System.Management.Automation.CompletionResult]::new(
                     $_.Command, $_.Command, 'ParameterValue', $_.Command
                 )
             }
         }
-        'ChildCommand'
+        else
         {
-            # The user has entered a main command; now suggest child commands
-            $mainCommand = $commandAst.CommandElements[$wordNumber - 1].Value
-            $matchingCommand = $commandsJson | Where-Object { $_.Command -eq $mainCommand }
-            
-            if ($matchingCommand)
+            # Suggest main commands
+            $commandsJson | Where-Object { $_.Command -like "$wordToComplete*" } | ForEach-Object {
+                [System.Management.Automation.CompletionResult]::new(
+                    $_.Command, $_.Command, 'ParameterValue', $_.Command
+                )
+            }
+        }
+           
+    }
+    elseif ($context -eq 'ChildCommand')
+    {
+        # The user has entered a main command; now suggest child commands
+        $mainCommand = $commandAst.CommandElements[1].Value
+        $matchingCommand = $commandsJson | Where-Object { $_.Command -eq $mainCommand }
+        if ($matchingCommand)
+        {
+            if ($wordToComplete -eq '')
             {
-                $matchingCommand.ChildCommands | Where-Object { $_.Command -like "$partialCommand*" } | ForEach-Object {
+                $matchingCommand.ChildCommands | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new(
                         $_, $_, 'ParameterValue', $_
                     )
                 }
             }
-        }
+            else
+            {
+                $matchingCommand.ChildCommands | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
+                    [System.Management.Automation.CompletionResult]::new(
+                        $_, $_, 'ParameterValue', $_
+                    )
+                }
+            }
+        }  
     }
 }
+
 Register-ArgumentCompleter -Native -CommandName zig, zig.exe -ScriptBlock $scriptblock
